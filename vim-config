@@ -1,0 +1,33 @@
+" Encoding
+set encoding=utf-8
+
+" Show line numbers
+set number
+
+" Turn on syntax highlighting.
+syntax on
+
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set softtabstop=4
+set mouse=a
+
+
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'ap/vim-css-color'
+Plug 'tpope/vim-fugitive'
+Plug 'ryanoasis/vim-devicons'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tc50cal/vim-terminal'
+Plug 'preservim/nerdtree'
+
+call plug#end()
+
+
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
